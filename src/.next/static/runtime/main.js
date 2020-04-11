@@ -942,7 +942,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      (0, _sourceMapSupport.rewriteStacktrace)(error, "C:\\Proyectos\\Web\\PelixSource\\Pelix\\src\\.next");
+      (0, _sourceMapSupport.rewriteStacktrace)(error, "C:\\Proyectos\\Web\\Series-\\Series-\\src\\.next");
       return error;
     }
   };

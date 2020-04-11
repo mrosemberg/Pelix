@@ -88,10 +88,100 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
+
+/***/ "./components/Header.js":
+/*!******************************!*\
+  !*** ./components/Header.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Header; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "C:\\Proyectos\\Web\\Series-\\Series-\\src\\components\\Header.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+function Header() {
+  return __jsx("nav", {
+    className: "navbar",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 3,
+      columnNumber: 9
+    }
+  }, __jsx("figure", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4,
+      columnNumber: 13
+    }
+  }, __jsx("img", {
+    src: "https://fontmeme.com/permalink/200411/65857c64854c31a8d0ca5720121909ae.png",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5,
+      columnNumber: 17
+    }
+  })));
+}
+;
+
+/***/ }),
+
+/***/ "./components/Layout.js":
+/*!******************************!*\
+  !*** ./components/Layout.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
+var _jsxFileName = "C:\\Proyectos\\Web\\Series-\\Series-\\src\\components\\Layout.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+const Layout = props => __jsx("div", {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 4,
+    columnNumber: 5
+  }
+}, __jsx(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 5,
+    columnNumber: 9
+  }
+}), __jsx("section", {
+  className: "content",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 6,
+    columnNumber: 9
+  }
+}, props.children));
+
+/* harmony default export */ __webpack_exports__["default"] = (Layout);
+
+/***/ }),
 
 /***/ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js":
 /*!**********************************************************************!*\
@@ -1777,69 +1867,72 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "C:\\Proyectos\\Web\\PelixSource\\Pelix\\src\\pages\\index.js";
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "styled-jsx/style");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+var _jsxFileName = "C:\\Proyectos\\Web\\Series-\\Series-\\src\\pages\\index.js";
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
- // import Header from "../components/Header";
-// import Movies from '../components/Movies';
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
-const Index = props => __jsx("div", {
+
+
+
+const Index = props => __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_4__["default"], {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 7,
-    columnNumber: 4
+    lineNumber: 6,
+    columnNumber: 3
   }
-}, __jsx("h1", {
+}, __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+  id: "1055802099",
+  __self: undefined
+}, "@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');body{background-color:#181818;background-image:linear-gradient(to bottom right,#b30077,#ff470f);background-image:none;color:#fff;height:100%;margin:0;font-family:'Noto Sans',sans-serif;}.navbar{background:#000;display:block;padding:12px 0;z-index:500;}.navbar img{width:120px;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:0;padding:0;}.content{background-image:url(\"https://assets.nflxext.com/ffe/siteui/vlv3/3b48f428-24ed-4692-bb04-bc7771854131/9150ecb7-5e45-4460-a05e-187e84695eac/PY-es-20200302-popsignuptwoweeks-perspective_alpha_website_medium.jpg\");background-attachment:fixed;background-position:center;background-repeat:no-repeat;background-size:cover;}.basic-grid{background-color:rgba(0,0,0,0.55);display:grid;gap:3rem;grid-template-columns:repeat(auto-fit,minmax(220px,2fr));}.card{margin-top:10px;margin-left:5px;margin-right:5px;padding:1px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:3rem;color:#fff;background-color:rgba(0,0,0,0.65);box-shadow:rgba(3,8,20,0.1) 0px 0.15rem 0.5rem,rgba(2,8,20,0.1) 0px 0.075rem 0.175rem;height:100%;border-radius:4px;-webkit-transition:all 500ms;transition:all 500ms;overflow:hidden;background-size:cover;background-position:center;background-repeat:no-repeat;}.card:hover{box-shadow:rgba(2,8,20,0.1) 0px 0.35em 1.175em,rgba(2,8,20,0.08) 0px 0.175em 0.5em;-webkit-transform:translateY(-3px) scale(1.0);-ms-transform:translateY(-3px) scale(1.0);transform:translateY(-3px) scale(1.0);}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxQcm95ZWN0b3NcXFdlYlxcU2VyaWVzLVxcU2VyaWVzLVxcc3JjXFxwYWdlc1xcaW5kZXguanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBTXdCLEFBRXNGLEFBR2hELEFBVVQsQUFPSixBQU91TSxBQVE5SyxBQU9yQixBQXNCMEUsWUEzQ3ZFLElBUEwsQUE2QkUsU0F2Q29ELEtBV3JELEVBNkJFLEVBUkosV0FwQkQsRUFxQkgsRUFRRyxPQVArQyxDQXJCL0QsSUE2QmlCLHNCQW1CeUIsUUE1RGhCLGNBaUJiLFFBaEJFLEFBaUNmLENBaEJjLFVBaEJFLEFBaUJoQixXQXVCMEIsQ0F2Q2IsU0FDMkIsbUNBQ3hDLDZCQXdEQSxFQXRDZ0MsRUFvQkwsMEJBbkJJLDJCQUNDLDRCQUNOLGtCQWtCSCxJQWpCdkIseUZBa0JtQixlQUNKLFdBQzBCLGtDQUN3RCxzRkFDakYsWUFDTSxrQkFDRyxrREFDTCxnQkFDTSxzQkFDSywyQkFDQyw0QkFDaEMiLCJmaWxlIjoiQzpcXFByb3llY3Rvc1xcV2ViXFxTZXJpZXMtXFxTZXJpZXMtXFxzcmNcXHBhZ2VzXFxpbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBMaW5rIGZyb20gXCJuZXh0L2xpbmtcIjtcclxuaW1wb3J0IGZldGNoIGZyb20gJ2lzb21vcnBoaWMtdW5mZXRjaCc7XHJcbmltcG9ydCBMYXlvdXQgZnJvbSBcIi4uL2NvbXBvbmVudHMvTGF5b3V0XCI7XHJcblxyXG5jb25zdCBJbmRleCA9IHByb3BzID0+IChcclxuICA8TGF5b3V0PlxyXG4gICAgIDxzdHlsZSBqc3ggZ2xvYmFsPntgXHJcbiAgICAgICAgQGltcG9ydCB1cmwoJ2h0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzP2ZhbWlseT1Ob3RvK1NhbnMmZGlzcGxheT1zd2FwJyk7XHJcblxyXG4gICAgICAgIGJvZHkge1xyXG4gICAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMTgxODE4O1xyXG4gICAgICAgICAgICBiYWNrZ3JvdW5kLWltYWdlOiBsaW5lYXItZ3JhZGllbnQodG8gYm90dG9tIHJpZ2h0LCAjYjMwMDc3LCAjZmY0NzBmKTtcclxuICAgICAgICAgICAgYmFja2dyb3VuZC1pbWFnZTogbm9uZTtcclxuICAgICAgICAgICAgY29sb3I6ICNmZmY7XHJcbiAgICAgICAgICAgIGhlaWdodDogMTAwJTtcclxuICAgICAgICAgICAgbWFyZ2luOiAwO1xyXG4gICAgICAgICAgICBmb250LWZhbWlseTogJ05vdG8gU2FucycsIHNhbnMtc2VyaWY7XHJcbiAgICAgICAgfVxyXG5cclxuICAgICAgICAubmF2YmFye1xyXG4gICAgICAgICAgICBiYWNrZ3JvdW5kOiAjMDAwO1xyXG4gICAgICAgICAgICBkaXNwbGF5OiBibG9jaztcclxuICAgICAgICAgICAgcGFkZGluZzogMTJweCAwO1xyXG4gICAgICAgICAgICB6LWluZGV4OiA1MDA7XHJcbiAgICAgICAgfVxyXG5cclxuICAgICAgICAubmF2YmFyIGltZ3tcclxuICAgICAgICAgICAgd2lkdGg6IDEyMHB4O1xyXG4gICAgICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gICAgICAgICAgICBtYXJnaW46IDA7XHJcbiAgICAgICAgICAgIHBhZGRpbmc6IDA7XHJcbiAgICAgICAgfVxyXG5cclxuICAgICAgICAuY29udGVudHtcclxuICAgICAgICAgICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKFwiaHR0cHM6Ly9hc3NldHMubmZseGV4dC5jb20vZmZlL3NpdGV1aS92bHYzLzNiNDhmNDI4LTI0ZWQtNDY5Mi1iYjA0LWJjNzc3MTg1NDEzMS85MTUwZWNiNy01ZTQ1LTQ0NjAtYTA1ZS0xODdlODQ2OTVlYWMvUFktZXMtMjAyMDAzMDItcG9wc2lnbnVwdHdvd2Vla3MtcGVyc3BlY3RpdmVfYWxwaGFfd2Vic2l0ZV9tZWRpdW0uanBnXCIpO1xyXG4gICAgICAgICAgICBiYWNrZ3JvdW5kLWF0dGFjaG1lbnQ6IGZpeGVkO1xyXG4gICAgICAgICAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XHJcbiAgICAgICAgICAgIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XHJcbiAgICAgICAgICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XHJcbiAgICAgICAgfVxyXG5cclxuICAgICAgICAuYmFzaWMtZ3JpZHtcclxuICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwLjU1KTtcclxuICAgICAgICAgICAgZGlzcGxheTogZ3JpZDtcclxuICAgICAgICAgICAgZ2FwOiAzcmVtO1xyXG4gICAgICAgICAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IHJlcGVhdChhdXRvLWZpdCwgbWlubWF4KDIyMHB4LCAyZnIpKTtcclxuICAgICAgICB9XHJcblxyXG4gICAgICAgIC5jYXJkIHtcclxuICAgICAgICAgICAgbWFyZ2luLXRvcDogMTBweDtcclxuICAgICAgICAgICAgbWFyZ2luLWxlZnQ6IDVweDtcclxuICAgICAgICAgICAgbWFyZ2luLXJpZ2h0OiA1cHg7XHJcbiAgICAgICAgICAgIHBhZGRpbmc6IDFweDtcclxuICAgICAgICAgICAgZGlzcGxheTogZmxleDtcclxuICAgICAgICAgICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICAgICAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbiAgICAgICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgICAgICAgICAgIGZvbnQtc2l6ZTogM3JlbTtcclxuICAgICAgICAgICAgY29sb3I6ICNmZmY7XHJcbiAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMC42NSk7XHJcbiAgICAgICAgICAgIGJveC1zaGFkb3c6IHJnYmEoMywgOCwgMjAsIDAuMSkgMHB4IDAuMTVyZW0gMC41cmVtLCByZ2JhKDIsIDgsIDIwLCAwLjEpIDBweCAwLjA3NXJlbSAwLjE3NXJlbTtcclxuICAgICAgICAgICAgaGVpZ2h0OiAxMDAlO1xyXG4gICAgICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XHJcbiAgICAgICAgICAgIHRyYW5zaXRpb246IGFsbCA1MDBtcztcclxuICAgICAgICAgICAgb3ZlcmZsb3c6IGhpZGRlbjtcclxuICAgICAgICAgICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcclxuICAgICAgICAgICAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyO1xyXG4gICAgICAgICAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xyXG4gICAgICAgIH1cclxuICAgICAgICAgIFxyXG4gICAgICAgIC5jYXJkOmhvdmVyIHtcclxuICAgICAgICAgICAgYm94LXNoYWRvdzogcmdiYSgyLCA4LCAyMCwgMC4xKSAwcHggMC4zNWVtIDEuMTc1ZW0sIHJnYmEoMiwgOCwgMjAsIDAuMDgpIDBweCAwLjE3NWVtIDAuNWVtO1xyXG4gICAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoLTNweCkgc2NhbGUoMS4wKTtcclxuICAgICAgICB9XHJcbiAgICAgYH08L3N0eWxlPlxyXG5cclxuICAgICA8ZGl2IGNsYXNzTmFtZT1cImJhc2ljLWdyaWRcIj5cclxuICAgICAgICB7cHJvcHMubW92aWVzLm1hcChtb3ZpZSA9PiAoXHJcbiAgICAgICAgICAgIDxkaXYga2V5PXttb3ZpZS5pZH0gY2xhc3NOYW1lPVwiY2FyZFwiPlxyXG4gICAgICAgICAgICAgICAgPExpbmsgaHJlZj1cIi9tL1tpZF0uanNcIiBhcz17YC9tLyR7bW92aWUuaWR9YH0+XHJcbiAgICAgICAgICAgICAgICAgICAgey8qIDxhPnttb3ZpZS5uYW1lfTwvYT4gKi99XHJcbiAgICAgICAgICAgICAgICAgICAgPGltZyBzcmM9e21vdmllLmltYWdlLm1lZGl1bX0vPlxyXG4gICAgICAgICAgICAgICAgPC9MaW5rPlxyXG4gICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICApKX0gXHJcbiAgICAgIDwvZGl2PiAgICAgIFxyXG4gIDwvTGF5b3V0PlxyXG4pO1xyXG5cclxuSW5kZXguZ2V0SW5pdGlhbFByb3BzID0gYXN5bmMgZnVuY3Rpb24gKCkge1xyXG4gIGNvbnN0IHJlcyAgID0gYXdhaXQgZmV0Y2goJ2h0dHA6Ly9hcGkudHZtYXplLmNvbS9zaG93cycpO1xyXG4gIGNvbnN0IGRhdGEgID0gYXdhaXQgcmVzLmpzb24oKTtcclxuXHJcbiAgY29uc29sZS5sb2coYEZldGNoZWQuIFRvdGFsOiAke2RhdGEubGVuZ3RofWApO1xyXG4gIFxyXG4gIHJldHVybiB7XHJcbiAgICAgIG1vdmllcyA6IGRhdGFcclxuICB9O1xyXG59O1xyXG5cclxuZXhwb3J0IGRlZmF1bHQgSW5kZXg7Il19 */\n/*@ sourceURL=C:\\\\Proyectos\\\\Web\\\\Series-\\\\Series-\\\\src\\\\pages\\\\index.js */"), __jsx("div", {
+  className: "jsx-1055802099" + " " + "basic-grid",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 8,
-    columnNumber: 7
+    lineNumber: 77,
+    columnNumber: 6
   }
-}, "Pelix"), __jsx("div", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 10,
-    columnNumber: 7
-  }
-}, props.movies.map(movie => __jsx("span", {
+}, props.movies.map(movie => __jsx("div", {
   key: movie.id,
+  className: "jsx-1055802099" + " " + "card",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 12,
+    lineNumber: 79,
     columnNumber: 13
   }
-}, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+}, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
   href: "/m/[id].js",
   as: `/m/${movie.id}`,
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 13,
+    lineNumber: 80,
     columnNumber: 17
   }
 }, __jsx("img", {
   src: movie.image.medium,
+  className: "jsx-1055802099",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 15,
+    lineNumber: 82,
     columnNumber: 21
   }
 }))))));
 
 Index.getInitialProps = async function () {
-  const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2___default()('http://api.tvmaze.com/shows');
+  const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default()('http://api.tvmaze.com/shows');
   const data = await res.json();
   console.log(`Fetched. Total: ${data.length}`);
   return {
@@ -1851,14 +1944,14 @@ Index.getInitialProps = async function () {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Proyectos\Web\PelixSource\Pelix\src\pages\index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! C:\Proyectos\Web\Series-\Series-\src\pages\index.js */"./pages/index.js");
 
 
 /***/ }),
@@ -1915,6 +2008,17 @@ module.exports = require("react");
 /***/ (function(module, exports) {
 
 module.exports = require("react-is");
+
+/***/ }),
+
+/***/ "styled-jsx/style":
+/*!***********************************!*\
+  !*** external "styled-jsx/style" ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("styled-jsx/style");
 
 /***/ }),
 

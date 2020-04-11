@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mrosemberg/Pelix.git"
+    "url": "git+https://github.com/mrosemberg/Series-.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mrosemberg/Pelix/issues"
+    "url": "https://github.com/mrosemberg/Series-/issues"
   },
-  "homepage": "https://github.com/mrosemberg/Pelix#readme",
+  "homepage": "https://github.com/mrosemberg/Series-#readme",
   "dependencies": {
     "isomorphic-unfetch": "^3.0.0",
     "next": "^9.3.4",
